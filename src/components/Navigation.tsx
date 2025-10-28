@@ -68,7 +68,7 @@ const Navigation = () => {
                 <button
                   onClick={() => scrollToSection("features")}
                   className={`text-foreground/80 hover:text-primary transition-colors relative pb-1 ${
-                    activeSection === "features" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-black" : ""
+                    activeSection === "features" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#000000]" : ""
                   }`}
                 >
                   What We Provide
@@ -151,7 +151,7 @@ const Navigation = () => {
                     setIsMenuOpen(false);
                   }}
                   className={`block text-foreground/80 hover:text-primary transition-colors w-full text-left ${
-                    activeSection === "features" ? "border-b-2 border-black pb-1" : ""
+                    activeSection === "features" ? "border-b-2 border-[#000000] pb-1" : ""
                   }`}
                 >
                   What We Provide
