@@ -218,13 +218,13 @@ const ExploreSection = () => {
                       className={cn(
                         "w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 text-left relative",
                         "hover:bg-muted/50",
-                        isActive && "text-primary font-semibold"
+                        isActive && "font-semibold"
                       )}
                     >
                       <OfferingIcon className="w-5 h-5 flex-shrink-0" />
                       <span className="font-medium text-sm">{offering.title}</span>
                       {isActive && (
-                        <div className="absolute bottom-0 left-4 right-4 h-0.5 bg-gradient-primary" />
+                        <div className="absolute bottom-0 left-4 right-4 h-0.5 bg-[#000000]" />
                       )}
                     </button>
                   );
