@@ -60,7 +60,7 @@ const Navigation = () => {
                 <button
                   onClick={() => scrollToSection("home")}
                   className={`text-foreground/80 hover:text-primary transition-colors relative pb-1 ${
-                    activeSection === "home" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-black" : ""
+                    activeSection === "home" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#000000]" : ""
                   }`}
                 >
                   Home
@@ -76,7 +76,7 @@ const Navigation = () => {
                 <button
                   onClick={() => scrollToSection("events")}
                   className={`text-foreground/80 hover:text-primary transition-colors relative pb-1 ${
-                    activeSection === "events" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-black" : ""
+                    activeSection === "events" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#000000]" : ""
                   }`}
                 >
                   Events
@@ -84,7 +84,7 @@ const Navigation = () => {
                 <button
                   onClick={() => scrollToSection("courses")}
                   className={`text-foreground/80 hover:text-primary transition-colors relative pb-1 ${
-                    activeSection === "courses" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-black" : ""
+                    activeSection === "courses" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#000000]" : ""
                   }`}
                 >
                   Courses
@@ -140,7 +140,7 @@ const Navigation = () => {
                     setIsMenuOpen(false);
                   }}
                   className={`block text-foreground/80 hover:text-primary transition-colors w-full text-left ${
-                    activeSection === "home" ? "border-b-2 border-black pb-1" : ""
+                    activeSection === "home" ? "border-b-2 border-[#000000] pb-1" : ""
                   }`}
                 >
                   Home
@@ -162,7 +162,7 @@ const Navigation = () => {
                     setIsMenuOpen(false);
                   }}
                   className={`block text-foreground/80 hover:text-primary transition-colors w-full text-left ${
-                    activeSection === "events" ? "border-b-2 border-black pb-1" : ""
+                    activeSection === "events" ? "border-b-2 border-[#000000] pb-1" : ""
                   }`}
                 >
                   Events
@@ -173,7 +173,7 @@ const Navigation = () => {
                     setIsMenuOpen(false);
                   }}
                   className={`block text-foreground/80 hover:text-primary transition-colors w-full text-left ${
-                    activeSection === "courses" ? "border-b-2 border-black pb-1" : ""
+                    activeSection === "courses" ? "border-b-2 border-[#000000] pb-1" : ""
                   }`}
                 >
                   Courses
