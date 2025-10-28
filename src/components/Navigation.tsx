@@ -55,60 +55,21 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {isHomePage ? (
-              <>
-                <button
-                  onClick={() => scrollToSection("home")}
-                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-2 ${
-                    activeSection === "home" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : ""
-                  }`}
-                >
-                  Home
-                </button>
-                <button
-                  onClick={() => scrollToSection("features")}
-                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-2 ${
-                    activeSection === "features" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : ""
-                  }`}
-                >
-                  What We Provide
-                </button>
-                <button
-                  onClick={() => scrollToSection("events")}
-                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-2 ${
-                    activeSection === "events" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : ""
-                  }`}
-                >
-                  Events
-                </button>
-                <button
-                  onClick={() => scrollToSection("courses")}
-                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-2 ${
-                    activeSection === "courses" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : ""
-                  }`}
-                >
-                  Courses
-                </button>
-              </>
-            ) : (
-              <>
-                <Link to="/" className="text-foreground/80 hover:text-primary transition-colors">
-                  Home
-                </Link>
-                <Link to="/events" className="text-foreground/80 hover:text-primary transition-colors">
-                  Events
-                </Link>
-                <Link to="/innovators-route" className="text-foreground/80 hover:text-primary transition-colors">
-                  Innovator's Route
-                </Link>
-                <Link to="/about" className="text-foreground/80 hover:text-primary transition-colors">
-                  About
-                </Link>
-                <Link to="/portfolio" className="text-foreground/80 hover:text-primary transition-colors">
-                  Portfolio
-                </Link>
-              </>
-            )}
+            <Link to="/" className="text-foreground/80 hover:text-primary transition-colors">
+              Home
+            </Link>
+            <Link to="/events" className="text-foreground/80 hover:text-primary transition-colors">
+              Events
+            </Link>
+            <Link to="/innovators-route" className="text-foreground/80 hover:text-primary transition-colors">
+              Innovator's Route
+            </Link>
+            <Link to="/about" className="text-foreground/80 hover:text-primary transition-colors">
+              About
+            </Link>
+            <Link to="/portfolio" className="text-foreground/80 hover:text-primary transition-colors">
+              Portfolio
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -132,92 +93,41 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
-            {isHomePage ? (
-              <>
-                <button
-                  onClick={() => {
-                    scrollToSection("home");
-                    setIsMenuOpen(false);
-                  }}
-                  className={`block text-foreground/80 hover:text-primary transition-colors w-full text-left ${
-                    activeSection === "home" ? "border-b-2 border-[#000000] pb-1" : ""
-                  }`}
-                >
-                  Home
-                </button>
-                <button
-                  onClick={() => {
-                    scrollToSection("features");
-                    setIsMenuOpen(false);
-                  }}
-                  className={`block text-foreground/80 hover:text-primary transition-colors w-full text-left ${
-                    activeSection === "features" ? "border-b-2 border-[#000000] pb-1" : ""
-                  }`}
-                >
-                  What We Provide
-                </button>
-                <button
-                  onClick={() => {
-                    scrollToSection("events");
-                    setIsMenuOpen(false);
-                  }}
-                  className={`block text-foreground/80 hover:text-primary transition-colors w-full text-left ${
-                    activeSection === "events" ? "border-b-2 border-[#000000] pb-1" : ""
-                  }`}
-                >
-                  Events
-                </button>
-                <button
-                  onClick={() => {
-                    scrollToSection("courses");
-                    setIsMenuOpen(false);
-                  }}
-                  className={`block text-foreground/80 hover:text-primary transition-colors w-full text-left ${
-                    activeSection === "courses" ? "border-b-2 border-[#000000] pb-1" : ""
-                  }`}
-                >
-                  Courses
-                </button>
-              </>
-            ) : (
-              <>
-                <Link
-                  to="/"
-                  className="block text-foreground/80 hover:text-primary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Home
-                </Link>
-                <Link
-                  to="/events"
-                  className="block text-foreground/80 hover:text-primary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Events
-                </Link>
-                <Link
-                  to="/innovators-route"
-                  className="block text-foreground/80 hover:text-primary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Innovator's Route
-                </Link>
-                <Link
-                  to="/about"
-                  className="block text-foreground/80 hover:text-primary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  About
-                </Link>
-                <Link
-                  to="/portfolio"
-                  className="block text-foreground/80 hover:text-primary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Portfolio
-                </Link>
-              </>
-            )}
+            <Link
+              to="/"
+              className="block text-foreground/80 hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              to="/events"
+              className="block text-foreground/80 hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Events
+            </Link>
+            <Link
+              to="/innovators-route"
+              className="block text-foreground/80 hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Innovator's Route
+            </Link>
+            <Link
+              to="/about"
+              className="block text-foreground/80 hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              to="/portfolio"
+              className="block text-foreground/80 hover:text-primary transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Portfolio
+            </Link>
             <div className="flex flex-col space-y-2 pt-4">
               <Button 
                 variant="ghost" 
