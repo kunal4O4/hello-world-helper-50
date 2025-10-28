@@ -59,32 +59,32 @@ const Navigation = () => {
               <>
                 <button
                   onClick={() => scrollToSection("home")}
-                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-1 ${
-                    activeSection === "home" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#000000]" : ""
+                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-2 ${
+                    activeSection === "home" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : ""
                   }`}
                 >
                   Home
                 </button>
                 <button
                   onClick={() => scrollToSection("features")}
-                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-1 ${
-                    activeSection === "features" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#000000]" : ""
+                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-2 ${
+                    activeSection === "features" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : ""
                   }`}
                 >
                   What We Provide
                 </button>
                 <button
                   onClick={() => scrollToSection("events")}
-                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-1 ${
-                    activeSection === "events" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#000000]" : ""
+                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-2 ${
+                    activeSection === "events" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : ""
                   }`}
                 >
                   Events
                 </button>
                 <button
                   onClick={() => scrollToSection("courses")}
-                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-1 ${
-                    activeSection === "courses" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#000000]" : ""
+                  className={`text-foreground/80 hover:text-primary transition-colors relative pb-2 ${
+                    activeSection === "courses" ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : ""
                   }`}
                 >
                   Courses
