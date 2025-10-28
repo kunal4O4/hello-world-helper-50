@@ -55,19 +55,44 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-foreground/80 hover:text-primary transition-colors">
+            <Link 
+              to="/" 
+              className={`hover:text-primary transition-colors relative pb-2 ${
+                location.pathname === "/" ? "text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : "text-foreground/80"
+              }`}
+            >
               Home
             </Link>
-            <Link to="/events" className="text-foreground/80 hover:text-primary transition-colors">
+            <Link 
+              to="/events" 
+              className={`hover:text-primary transition-colors relative pb-2 ${
+                location.pathname === "/events" ? "text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : "text-foreground/80"
+              }`}
+            >
               Events
             </Link>
-            <Link to="/innovators-route" className="text-foreground/80 hover:text-primary transition-colors">
+            <Link 
+              to="/innovators-route" 
+              className={`hover:text-primary transition-colors relative pb-2 ${
+                location.pathname === "/innovators-route" ? "text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : "text-foreground/80"
+              }`}
+            >
               Innovator's Route
             </Link>
-            <Link to="/about" className="text-foreground/80 hover:text-primary transition-colors">
+            <Link 
+              to="/about" 
+              className={`hover:text-primary transition-colors relative pb-2 ${
+                location.pathname === "/about" ? "text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : "text-foreground/80"
+              }`}
+            >
               About
             </Link>
-            <Link to="/portfolio" className="text-foreground/80 hover:text-primary transition-colors">
+            <Link 
+              to="/portfolio" 
+              className={`hover:text-primary transition-colors relative pb-2 ${
+                location.pathname === "/portfolio" ? "text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#000000] after:content-['']" : "text-foreground/80"
+              }`}
+            >
               Portfolio
             </Link>
           </div>
@@ -95,35 +120,45 @@ const Navigation = () => {
           <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
             <Link
               to="/"
-              className="block text-foreground/80 hover:text-primary transition-colors"
+              className={`block hover:text-primary transition-colors ${
+                location.pathname === "/" ? "text-primary border-b-2 border-[#000000] pb-1" : "text-foreground/80"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/events"
-              className="block text-foreground/80 hover:text-primary transition-colors"
+              className={`block hover:text-primary transition-colors ${
+                location.pathname === "/events" ? "text-primary border-b-2 border-[#000000] pb-1" : "text-foreground/80"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Events
             </Link>
             <Link
               to="/innovators-route"
-              className="block text-foreground/80 hover:text-primary transition-colors"
+              className={`block hover:text-primary transition-colors ${
+                location.pathname === "/innovators-route" ? "text-primary border-b-2 border-[#000000] pb-1" : "text-foreground/80"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Innovator's Route
             </Link>
             <Link
               to="/about"
-              className="block text-foreground/80 hover:text-primary transition-colors"
+              className={`block hover:text-primary transition-colors ${
+                location.pathname === "/about" ? "text-primary border-b-2 border-[#000000] pb-1" : "text-foreground/80"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
               to="/portfolio"
-              className="block text-foreground/80 hover:text-primary transition-colors"
+              className={`block hover:text-primary transition-colors ${
+                location.pathname === "/portfolio" ? "text-primary border-b-2 border-[#000000] pb-1" : "text-foreground/80"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
               Portfolio
